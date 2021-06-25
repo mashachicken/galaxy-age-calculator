@@ -26,3 +26,12 @@ describe('Years', () => {
     expect(testAge.jupiterYears).toEqual(237.2);
   });
 });
+describe('Years', () => {
+  test ('Determines if the program correctly counts how many solar years a user has left to live on each planet and pushes it to an array', () => {
+    let testAge = new Years(20, 90);
+    testAge.mercuryCount()
+    testAge.venusCount()
+    testAge.marsCount()
+    testAge.jupiterCount()
+    expect(testAge.yearsLeft()).toEqual([i]);
+  });
