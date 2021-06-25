@@ -43,7 +43,7 @@ describe('Years', () => {
       testAge.jupiterCount()
     let yearsPast = () => {testAge.yearsLeft().forEach(function(year){
       return year * 1
-      expect(yearPast().toEqual([ 57.31999999999999]))
+      expect(yearPast().toEqual([82.12, 77.56, 62.44, 57.31999999999999]))
     })
   }
 });
