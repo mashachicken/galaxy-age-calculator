@@ -20,4 +20,9 @@ describe('Years', () => {
     testAge.jupiterCount()
     expect(testAge.jupiterYears).toEqual(237.2);
   });
+  test('Should correctly calculate user`s age in jupiter years', () => {
+    let testAge = new Years(20);
+    testAge.jupiterCount()
+    expect(testAge.jupiterYears).toEqual(0);
+  });
 });
