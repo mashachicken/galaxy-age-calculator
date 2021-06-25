@@ -3,9 +3,10 @@ export class Years {
     this.userAge = userAge,
     this.lifeExpectancy = lifeExpectancy
   }
-
-  if (year >= 0) {
-    $("#yearsleft").xx
-} else {
-  $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
-};
+  userYears.yearsLeft().forEach(function(year){
+    if (year >= 0) {
+      $("#yearsleft").append("<li>" + year + "</li>")
+    } else {
+      $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
+    };
+  })
