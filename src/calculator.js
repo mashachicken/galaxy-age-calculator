@@ -1,7 +1,7 @@
 export class Years {
-  constructor (userAge, lifeExpectancy) {
+  constructor(userAge, lifeExpectancy) {
     this.userAge = userAge,
-    this.lifeExpectancy = lifeExpectancy
+      this.lifeExpectancy = lifeExpectancy
   }
   mercuryCount() {
     this.mercuryYears = (this.userAge * .24);
@@ -23,4 +23,4 @@ export class Years {
     yearsLeftArray.push(this.lifeExpectancy - this.jupiterYears)
     return yearsLeftArray
   }
-};
+}

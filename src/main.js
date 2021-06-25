@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import "./css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { Years } from './../src/calculator.js';
+
 $(document).ready(function () {
   $("#calculateYearsForm").submit(function (event) {
     event.preventDefault()
@@ -21,9 +21,9 @@ $(document).ready(function () {
         $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
       }
     });
-      $(".mercury").html(userYears.mercuryYears);
-      $(".venus").html(userYears.venusYears);
-      $(".mars").html(userYears.marsYears);
-      $(".jupiter").html(userYears.jupiterYears);
-    });
+    $(".mercury").html(userYears.mercuryYears);
+    $(".venus").html(userYears.venusYears);
+    $(".mars").html(userYears.marsYears);
+    $(".jupiter").html(userYears.jupiterYears);
   });
+});
