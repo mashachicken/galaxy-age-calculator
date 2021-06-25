@@ -3,10 +3,15 @@ export class Years {
     this.userAge = userAge,
     this.lifeExpectancy = lifeExpectancy
   }
-  userYears.yearsLeft().forEach(function(year){
-    if (year >= 0) {
-      $("#yearsleft").append("<li>" + year + "</li>")
-    } else {
-      $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
-    };
-  })
+  mercuryCount() {
+    this.mercuryYears = (this.userAge * .24);
+  }
+  venusCount() {
+    this.venusYears = (this.userAge * .62);
+  }
+  marsCount() {
+    this.marsYears = (this.userAge * 1.88);
+  }
+  jupiterCount() {
+    this.jupiterYears = (this.userAge * 11.86);
+  }

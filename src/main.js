@@ -2,6 +2,8 @@ $(document).ready(function(){
   $("#calculateYearsForm").submit(function(event) {
     event.preventDefault()
     const userAge = $("#solar").val();
+    const lifeExpectancy = $("#life").val();
+    let userYears = new Years (userAge, lifeExpectancy)
     
     userYears.yearsLeft().forEach(function(year){
       if (year >= 0) {
