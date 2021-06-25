@@ -15,3 +15,12 @@ export class Years {
   jupiterCount() {
     this.jupiterYears = (this.userAge * 11.86);
   }
+  yearsLeft() {
+    let yearsLeftArray = [];
+    yearsLeftArray.push(this.lifeExpectancy - this.mercuryYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.venusYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.marsYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.jupiterYears)
+    return yearsLeftArray
+  }
+};
