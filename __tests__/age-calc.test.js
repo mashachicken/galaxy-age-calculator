@@ -35,3 +35,16 @@ describe('Years', () => {
     testAge.jupiterCount()
     expect(testAge.yearsLeft()).toEqual([85.2, 77.6, 52.400000000000006, -147.2]);
   });
+  test('Should test my UI logic I eplimented in main.js works (multyplying years by 1 to make it a positive number instead of a negative', () => {
+    let testAge = new Years(12, 85);
+      testAge.mercuryCount()
+      testAge.venusCount()
+      testAge.marsCount()
+      testAge.jupiterCount()
+    let yearsPast = () => {testAge.yearsLeft().forEach(function(year){
+      return year * 1
+      expect(yearPast().toEqual([ 57.31999999999999]))
+    })
+  }
+});
+});
