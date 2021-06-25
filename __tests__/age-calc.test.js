@@ -8,6 +8,6 @@ describe('Years', () => {
   test('Should correctly calculate user`s age in venus years', () => {
     let testAge = new Years(30);
     testAge.venusCount()
-    expect(testAge.venusYears).toEqual(9);
+    expect(testAge.venusYears).toEqual(18.6);
   });
 });
