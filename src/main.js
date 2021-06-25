@@ -1,5 +1,7 @@
 import $ from 'jquery';
-import 'bootstrap';
+import "./css/styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Years } from './../src/calculator.js';
 $(document).ready(function () {
   $("#calculateYearsForm").submit(function (event) {
