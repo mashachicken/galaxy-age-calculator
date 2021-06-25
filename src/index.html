@@ -3,34 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Galaxy Age Calculator</title>
 </head>
 
 <body>
-  <div class='hero'>
-    
-  </div>
+
   <div class='main'>
     <form id="calculateYearsForm">
       <label for='solar'> Enter your age in solar years</label><br>
       <input type="text" id="solar"><br><br>
       <label for='life'> At what would prefer to die?</label><br>
-      <input type="text" id="life"><br>
+      <input type="text" id="life"><br><br>
       <button type="submit" name="button">Enter</button>
     </form> <br>
-    <label for="mercury"> This is your age in mercury years </label>
-    <div class="mercury">
-    </div>
-    <label for="venus"> This is your age in venus years</label>
-    <div class="venus">
-    </div>
-    <label for="mars"> This is your age in mars years </label>
-    <div class="mars">
-    </div>
-    <label for="jupiter">This is your age in jupiter years </label>
-    <div class="jupiter">
-    </div>
-    <h2> years you have left to live on each planet: </h2>
+    <label id='mercury' for="mercury"> Your age in mercury years: </label>
+    <span class="mercury">
+    </span>
+    <label id='venus' for="venus"> Your age in venus years:</label>
+    <span class="venus">
+    </span>
+    <label id='mars' for="mars"> Your age in mars years: </label>
+    <span class="mars">
+    </span>
+    <label id='jupiter' for="jupiter">Your age in jupiter years: </label>
+    <span class="jupiter">
+    </span><br>
+    <h5 id='hide'> years you have left to live on each planet (in same order as above): </h5>
     <ul id="yearsleft">
     </ul>
     <ul id="yearspast">

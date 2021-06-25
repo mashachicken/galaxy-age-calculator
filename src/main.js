@@ -17,13 +17,18 @@ $(document).ready(function () {
     userYears.yearsLeft().forEach(function (year) {
       if (year >= 0) {
         $("#yearsleft").append("<li>" + year + "</li>")
+        $('#hide').show()
       } else {
-        $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
+        $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy for this planet" + "</li>")
       }
     });
-    $(".mercury").html(userYears.mercuryYears);
-    $(".venus").html(userYears.venusYears);
-    $(".mars").html(userYears.marsYears);
-    $(".jupiter").html(userYears.jupiterYears);
+    $(".mercury").html(userYears.mercuryYears + '<br>');
+    $("#mercury").show()
+    $(".venus").html(userYears.venusYears+ '<br>');
+    $("#venus").show()
+    $(".mars").html(userYears.marsYears+ '<br>');
+    $("#mars").show()
+    $(".jupiter").html(userYears.jupiterYears+ '<br>');
+    $("#jupiter").show()
   });
 });
