@@ -33,5 +33,5 @@ describe('Years', () => {
     testAge.venusCount()
     testAge.marsCount()
     testAge.jupiterCount()
-    expect(testAge.yearsLeft()).toEqual([i]);
+    expect(testAge.yearsLeft()).toEqual([85.2, 77.6, 52.400000000000006, -147.2]);
   });
