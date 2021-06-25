@@ -24,11 +24,11 @@ $(document).ready(function () {
     });
     $(".mercury").html(userYears.mercuryYears + '<br>');
     $("#mercury").show()
-    $(".venus").html(userYears.venusYears+ '<br>');
+    $(".venus").html(userYears.venusYears + '<br>');
     $("#venus").show()
-    $(".mars").html(userYears.marsYears+ '<br>');
+    $(".mars").html(userYears.marsYears + '<br>');
     $("#mars").show()
-    $(".jupiter").html(userYears.jupiterYears+ '<br>');
+    $(".jupiter").html(userYears.jupiterYears + '<br>');
     $("#jupiter").show()
   });
 });
